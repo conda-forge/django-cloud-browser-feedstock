@@ -11,15 +11,15 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
@@ -38,5 +38,3 @@ about:
 extra:
   recipe-maintainers:
     - mxr-conda
-    - oblute
-    - rluria14
